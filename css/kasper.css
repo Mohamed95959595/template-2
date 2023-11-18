@@ -169,7 +169,7 @@ header nav ul {
     display: none;
   }
 
-  header nav .toggle-menu:hover+ul {
+  header nav .toggle-menu:hover + ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -281,7 +281,6 @@ header nav .search:hover {
 }
 
 @media (max-width: 767px) {
-
   .landing .slide-left,
   .landing .slide-right {
     display: none;
@@ -700,7 +699,7 @@ header nav .search:hover {
 }
 
 @media (min-width: 992px) {
-  .skills .container>div {
+  .skills .container > div {
     width: 45%;
   }
 }
@@ -713,7 +712,7 @@ header nav .search:hover {
   text-transform: uppercase;
 }
 
-.skills .container>div>p {
+.skills .container > div > p {
   text-align: center;
   color: var(--second-color);
   line-height: 1.8;
@@ -875,7 +874,7 @@ header nav .search:hover {
   font-size: 16px;
 }
 
-.quote .container>span {
+.quote .container > span {
   display: block;
   margin-top: 10px;
   font-size: 14px;
@@ -986,7 +985,7 @@ header nav .search:hover {
   margin-top: 80px;
 }
 
-.pricing .container>a {
+.pricing .container > a {
   display: block;
   width: fit-content;
   padding: 10px 30px;
@@ -996,7 +995,7 @@ header nav .search:hover {
   font-size: 16px;
 }
 
-.pricing .container>a:hover {
+.pricing .container > a:hover {
   color: white;
 }
 
@@ -1154,7 +1153,7 @@ header nav .search:hover {
   text-transform: uppercase;
 }
 
-.contact .info h4+p {
+.contact .info h4 + p {
   font-size: 16px;
   color: var(--second-color);
   line-height: 1.8;
@@ -1241,3 +1240,29 @@ header nav .search:hover {
 }
 
 /* end footer */
+
+/* scroll btn */
+.up {
+  position: fixed;
+  bottom: 20px;
+  right: -40px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.up i {
+  font-size: 20px;
+}
+
+.up:hover {
+  background-color: #14a4cc;
+  transition: 0.3s;
+}
+
+.up.show {
+  right: 40px;
+}
