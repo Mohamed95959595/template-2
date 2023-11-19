@@ -1246,7 +1246,7 @@ header nav .search:hover {
   position: fixed;
   bottom: 20px;
   right: -40px;
-  background-color: var(--main-color);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 5px 8px;
   border-radius: 5px;
@@ -1259,7 +1259,7 @@ header nav .search:hover {
 }
 
 .up:hover {
-  background-color: #14a4cc;
+  background-color: var(--main-color);
   transition: 0.3s;
 }
 
